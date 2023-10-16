@@ -109,7 +109,6 @@ def main(page:Page):
                         page.update()
                         print('not get response after sending AT+BOOT=2')
                         
-            
                 else:
                     if len(page.controls)>1:
                         for i in range(2,len(page.controls)+1):
@@ -120,8 +119,6 @@ def main(page:Page):
                     
             except:
                 pass
-
-            
         except:
             pass
 
@@ -133,6 +130,4 @@ def main(page:Page):
     page.scroll='ADAPTIVE'
     page.update()
     
-
-
 flet.app(target=main)
